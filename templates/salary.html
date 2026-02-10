@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}Salary{% endblock %}
+{% block content %}
+
+<div class="container mt-4">
+
+    <h3>Salary Management</h3>
+
+    <form method="POST" action="/salary/add">
+        <input type="text" name="employee_code" class="form-control mb-2" placeholder="Employee Code" required>
+        <input type="text" name="amount" class="form-control mb-2" placeholder="Salary Amount" required>
+        <input type="text" name="month" class="form-control mb-2" placeholder="Month" required>
+
+        <button class="btn btn-success">Add Salary</button>
+    </form>
+
+    <hr>
+
+    <h4>Salary Records</h4>
+
+    <table class="table">
+        <tr>
+            <th>Employee</th>
+            <th>Amount</th>
+            <th>Month</th>
+            <th>Payslip</th>
+
+        </tr>
+
+        {% for s in salaries %}
+        <tr>
+            <td>{{ s.employee_code }}</td>
+            <td>{{ s.amount }}</td>
+            <td>{{ s.month }}</td>
+            <a href="/salary/payslip/{{ s.id }}">
+                <button class="btn btn-primary btn-sm">Download Payslip</button>
+            </a>
+        </tr>
+        {% endfor %}
+    </table>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Edit Employee{% endblock %}
+{% block content %}
+
+<div class="container mt-4">
+    <h3>Edit Employee</h3>
+
+    <form method="POST">
+
+        <div class="mb-3">
+            <label>Employee Code</label>
+            <input type="text" class="form-control" value="{{ emp.employee_code }}" disabled>
+        </div>
+
+        <div class="mb-3">
+            <label>Full Name</label>
+            <input type="text" name="full_name" class="form-control" value="{{ emp.full_name }}">
+        </div>
+
+        <div class="mb-3">
+            <label>Email</label>
+            <input type="email" name="email" class="form-control" value="{{ emp.email }}">
+        </div>
+
+        <div class="mb-3">
+            <label>Department</label>
+            <input type="text" name="department" class="form-control" value="{{ emp.department }}">
+        </div>
+
+        <button class="btn btn-success">Update Employee</button>
+
+    </form>
+</div>
+
+{% endblock %}
