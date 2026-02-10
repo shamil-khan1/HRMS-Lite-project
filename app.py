@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 from flask import request, redirect, url_for, session
 from routes.leave_routes import leave_bp
 from routes.salary_routes import salary_bp
@@ -120,7 +120,6 @@ app = create_app()
 
 if __name__ == "__main__":
     app.run(debug=True)
-=======
 from flask import request, redirect, url_for, session
 from routes.leave_routes import leave_bp
 from routes.salary_routes import salary_bp
@@ -242,4 +241,3 @@ app = create_app()
 
 if __name__ == "__main__":
     app.run(debug=True)
->>>>>>> 6ec83ccf5bc0811d8ec8fb25d2cacca47f410e41

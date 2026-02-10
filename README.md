@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # HRMS Lite Backend
 
 ## Overview
@@ -19,7 +19,7 @@ employees and attendance records.
 2. Update database credentials
 3. Install dependencies
 4. Run app.py
-=======
+
 # HRMS Lite Backend
 
 ## Overview
@@ -40,4 +40,3 @@ employees and attendance records.
 2. Update database credentials
 3. Install dependencies
 4. Run app.py
->>>>>>> 6ec83ccf5bc0811d8ec8fb25d2cacca47f410e41
