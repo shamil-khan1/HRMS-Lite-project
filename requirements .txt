@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 flask
 flask_sqlalchemy
 pymysql
 python-dotenv
 gunicorn
+=======
+flask
+flask_sqlalchemy
+pymysql
+python-dotenv
+gunicorn
+>>>>>>> 6ec83ccf5bc0811d8ec8fb25d2cacca47f410e41
