@@ -1,3 +1,4 @@
+import os
 from flask import Flask, jsonify, render_template, session, redirect, url_for, request
 from datetime import date
 
@@ -85,9 +86,9 @@ def create_app():
         ])
 
     with app.app_context():
-        db.create_all()
-
-    return app
+        if os.environ.get("RENDER") != "true":
+            with app.app_context():
+                return app
 
 
 app = create_app()

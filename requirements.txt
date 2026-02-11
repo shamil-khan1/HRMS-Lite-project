@@ -1,6 +1,5 @@
 Flask
 Flask-SQLAlchemy
 PyMySQL
-Werkzeug
 gunicorn
 reportlab
